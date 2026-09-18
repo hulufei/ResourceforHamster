@@ -4,3 +4,10 @@ Input_Method/万象拼音/.DS_Store
 Input_Method/.DS_Store
 Input_Method/雾凇拼音/Rime/.DS_Store
 .DS_Store
+
+# Rime runtime and generated files
+Input_Method/万象拼音/Rime4Fcitx5orSquirrel/build/
+Input_Method/万象拼音/Rime4Fcitx5orSquirrel/*.userdb/
+Input_Method/万象拼音/Rime4Fcitx5orSquirrel/installation.yaml
+Input_Method/万象拼音/Rime4Fcitx5orSquirrel/user.yaml
+Input_Method/万象拼音/Rime4Fcitx5orSquirrel/sync/

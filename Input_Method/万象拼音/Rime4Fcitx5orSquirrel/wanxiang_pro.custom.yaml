@@ -18,7 +18,7 @@ patch:
 
   speller/algebra:
     __patch:
-      #- 模糊音                                  # 这里启用后，本文件末尾可配置具体条目
+      - 模糊音 # 这里启用后，本文件末尾可配置具体条目
       - wanxiang_algebra:/pro/小鹤双拼 # 可选输入方案名称：自然码, 自然龙, 小鹤双拼, 搜狗双拼, 微软双拼, 智能ABC, 紫光双拼, 国标双拼
       - wanxiang_algebra:/pro/直接辅助 #辅助码升级为：直接辅助和间接辅助两种类型，都是句中任意，不同点在于直接辅助是nire=你  而间接则需要/引导  ni/re=你 ，在这个基础上直接辅助支持拼音后任意位置数字声调参与，间接辅助声调在/引导前参与
       #- 自然码提权                               #本文件末尾，有自然码和小鹤的可以用
@@ -145,9 +145,9 @@ patch:
     # select_character: "bracketleft, bracketright"  # [ 上屏首字，] 上屏尾字（英文全拼）
 
   user_predict:
-    db_name: predict         # 数据库名称（默认 predict，将生成 predict.userdb 文件夹）
-    mobile_predict_style: post   # 移动端联想模式："post"（上屏后弹出预测候选）| "reorder"（输入时调频）| "off"（关闭）
-    enable_fallback_reorder: false  # 同码回删再输首次交换
+    db_name: predict # 数据库名称（默认 predict，将生成 predict.userdb 文件夹）
+    mobile_predict_style: post # 移动端联想模式："post"（上屏后弹出预测候选）| "reorder"（输入时调频）| "off"（关闭）
+    enable_fallback_reorder: false # 同码回删再输首次交换
     max_candidates: 10 # 屏幕最多显示的联想词数量
     max_predictions: 3 # 连续触发预测的最高次数限制
     expiry_days: 90 # 绝对寿命（天）：不命中则物理销毁
