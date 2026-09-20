@@ -18,7 +18,13 @@ patch:
 
   speller/algebra:
     __patch:
-      - 模糊音 # 这里启用后，本文件末尾可配置具体条目
+      # - 模糊音 # 这里启用后，本文件末尾可配置具体条目
+      # 万象预设了多组常用模糊音规则: https://amzxyz.github.io/rime-wanxiang/doc/fuzzy/
+      - wanxiang_algebra:/模糊音_s_sh
+      - wanxiang_algebra:/模糊音_c_ch
+      - wanxiang_algebra:/模糊音_z_zh
+      - wanxiang_algebra:/模糊音_en_eng
+      - wanxiang_algebra:/模糊音_in_ing
       - wanxiang_algebra:/pro/小鹤双拼 # 可选输入方案名称：自然码, 自然龙, 小鹤双拼, 搜狗双拼, 微软双拼, 智能ABC, 紫光双拼, 国标双拼
       - wanxiang_algebra:/pro/直接辅助 #辅助码升级为：直接辅助和间接辅助两种类型，都是句中任意，不同点在于直接辅助是nire=你  而间接则需要/引导  ni/re=你 ，在这个基础上直接辅助支持拼音后任意位置数字声调参与，间接辅助声调在/引导前参与
       #- 自然码提权                               #本文件末尾，有自然码和小鹤的可以用
@@ -186,23 +192,23 @@ patch:
 模糊音:
   __append:
     # n - l
-    - derive/^l/n
-    - derive/^n/l
+    # - derive/^l/n
+    # - derive/^n/l
     # r - y     开头
-    - derive/^y/r
-    - derive/^r/y
+    # - derive/^y/r
+    # - derive/^r/y
     # h - f     开头
-    - derive/^h/f
-    - derive/^f/h
+    # - derive/^h/f
+    # - derive/^f/h
     # r - l     开头
-    - derive/^r/l
-    - derive/^l/r
+    # - derive/^r/l
+    # - derive/^l/r
     # k - g     开头
-    - derive/^k/g
-    - derive/^g/k
+    # - derive/^k/g
+    # - derive/^g/k
     # an - ang
-    - derive/([ui]?)([āáǎàa])ng(.*)$/$1$2n$3
-    - derive/([ui]?)([āáǎàa])n(.*)$/$1$2ng$3
+    # - derive/([ui]?)([āáǎàa])ng(.*)$/$1$2n$3
+    # - derive/([ui]?)([āáǎàa])n(.*)$/$1$2ng$3
     # en - eng
     - derive/([ēéěèe])ng(.*)$/$1n$2
     - derive/([ēéěèe])n(.*)$/$1ng$2
